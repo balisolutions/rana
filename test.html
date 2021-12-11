@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceroton</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .hide{
+            display: none;
+        }
+        .div{
+            font-size: 200px;
+            text-align: center;
+        }
+        .btn {
+            padding-top: 120px;
+            text-align: center;
+            background-color: #04AA6D!important;
+            border-radius: 5px;            
+            padding: 6px 18px;
+            color: white;
+            cursor: pointer;
+        }
+        .a {
+            font-size: 24px;            
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="btn" class="btn" onclick="finger()"><a class="a">VAYA PENDEJERETE<br>HACELE CLICK</a></div>
+    <div id="div" class="div hide">&#128405;</div>
+</body>
+<script>
+    
+    
+
+	$(document).ready(function() {		
+
+        setTimeout(function(){
+            alert('Dale ok si sos bruto')
+        }, 5000)
+
+    });
+
+    function finger(){
+        $('#div').show();
+        $('#btn').hide();        
+    }
+    
+</script>
+</html>
